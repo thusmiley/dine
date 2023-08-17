@@ -1,0 +1,274 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --container-w: 95%;
+  }
+
+  @screen sm {
+    :root {
+      --container-w: clamp(540px, 82%, 1280px);
+    }
+  }
+
+  @screen 2xl {
+    :root {
+      --container-w: clamp(1000px, 82%, 1110px);
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    font-family: "League Spartan", sans-serif;
+    @apply text-ebonyClay;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* headings */
+@layer components {
+  .heading1 {
+    font-size: 32px;
+    font-weight: lighter;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+
+    @screen md {
+      font-size: 48px;
+      line-height: 64px;
+      letter-spacing: -0.6px;
+    }
+
+    @screen xl {
+      font-size: 80px;
+      line-height: 80px;
+      letter-spacing: -1px;
+    }
+  }
+
+  .heading2 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+    font-weight: bold;
+
+    @screen md {
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  .heading3 {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    font-weight: bold;
+  }
+
+  .heading4 {
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: 2.5px;
+    font-weight: 600;
+    opacity: 0.5;
+  }
+
+  .paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+    @screen md {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+/* components  */
+.footer-font {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.cta {
+  padding: 25px 54px;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 16px;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.cta-dark {
+  border: 1px solid white;
+}
+
+.cta-light {
+  border: 1px solid #111111;
+  color: #111111;
+}
+
+.cta-dark:hover {
+  background: #fff;
+  @apply text-coldGray;
+}
+
+.cta-light:hover {
+  background: #111;
+  color: white;
+}
+
+.imgBoxshadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+/* general styles  */
+.flexCenter {
+  @apply flex justify-center items-center;
+}
+
+.flexBetween {
+  @apply flex justify-between items-center;
+}
+
+.flexStart {
+  @apply flex justify-start items-center;
+}
+
+.flexEnd {
+  @apply flex justify-end items-center;
+}
+
+.max-width {
+  @apply max-w-[1440px] mx-auto;
+}
+
+/* homepage hero background  */
+.bg-home {
+  background: url("/src/assets/homepage/hero-bg-mobile.jpg") no-repeat center top;
+  background-size: cover;
+  @screen sm {
+    background: url("/src/assets/homepage/hero-bg-mobile@2x.jpg") no-repeat center top;
+    background-size: cover;
+  }
+  @screen md {
+    background: url("/src/assets/homepage/hero-bg-tablet.jpg") no-repeat center top;
+    background-size: cover;
+  }
+  @screen lg {
+    background: url("/src/assets/homepage/hero-bg-tablet@2x.jpg") no-repeat center top;
+    background-size: cover;
+  }
+  @screen xl {
+    background: url("/src/assets/homepage/hero-bg-desktop.jpg") no-repeat center top;
+    background-size: cover;
+  }
+  @screen 2xl {
+    background: url("/src/assets/homepage/hero-bg-desktop@2x.jpg") no-repeat center top;
+    background-size: cover;
+  }
+}
+
+img.img-active {
+  display: block;
+}
+
+button.active {
+  opacity: 1;
+}
+
+.active:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 20%;
+  height: 1px;
+  @apply bg-beaver;
+}
+@screen xl {
+  .active:after {
+    content: url("./assets/patterns/line-tab.png");
+    top: -5px;
+    left: -57%;
+    height: 0;
+  }
+}
+
+.description {
+  max-width: 457px;
+}
+.cta-bg {
+  background: url("./assets/homepage/ready-bg-mobile.jpg") no-repeat center center;
+  background-size: cover;
+  @screen sm {
+    background: url("./assets/homepage/ready-bg-tablet.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  @screen lg {
+    background: url("./assets/homepage/ready-bg-desktop.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.tab {
+  transition: 0.3s ease-in-out;
+}
+
+.tab:hover {
+  opacity: 1;
+}
+
+.features-bg {
+  background: none;
+  @screen md {
+    background: url("./assets/patterns/pattern-curve-top-right.svg") no-repeat top 15% left -500px,
+      url("./assets/patterns/pattern-curve-top-left.svg") no-repeat bottom 0 right -550px;
+    background-size: contain contain;
+  }
+  @screen xl {
+    background: url("./assets/patterns/pattern-curve-top-right.svg") no-repeat top 25% left 0,
+      url("./assets/patterns/pattern-curve-top-left.svg") no-repeat bottom 0 right 0;
+    background-size: contain contain;
+  }
+}
+.events-bg {
+  background: none;
+  @screen md {
+    background: url("./assets/patterns/pattern-curve-top-right.svg") no-repeat top 0 left -500px;
+    background-size: contain;
+  }
+  @screen xl {
+    background: url("./assets/patterns/pattern-curve-top-right.svg") no-repeat top 0 left -200px;
+    background-size: 50%;
+  }
+}
+
+.hide-event {
+  display: none;
+}
