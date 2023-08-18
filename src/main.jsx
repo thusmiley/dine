@@ -8,8 +8,8 @@ import Booking from "./Booking.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/booking" element={<Booking />} />
+      <Route path="./" element={<App />} />
+      <Route path="./booking" element={<Booking />} />
     </Routes>
   </BrowserRouter>
 );
