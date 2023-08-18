@@ -284,7 +284,7 @@ button.active {
   display: none;
 }
 
-/* booking page  */
+/* booking hero  */
 .bg-booking-hero {
   background: url("/src/assets/booking/hero-bg-mobile.jpg") no-repeat center top;
   background-size: cover;
@@ -329,14 +329,6 @@ select {
   appearance: none;
   background: url('/src/assets/icons/icon-arrow.svg') no-repeat right 16px top 6px;
 }
-
-/* select::after {
-  content: url("/src/assets/icons/icon-arrow.svg");
-  position: absolute;
-  display: inline-block;
-  right: 16px;
-  bottom: 14px;
-} */
 
 input::placeholder {
   @apply text-coldGray opacity-50;

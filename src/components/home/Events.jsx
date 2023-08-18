@@ -32,22 +32,18 @@ const Events = () => {
     }
 
     if (e.target.classList.contains("special")) {
-      // show/hide active state of the event buttons
       specialTab.classList.add("active");
       socialTab.classList.remove("active");
       familyTab.classList.remove("active");
-      // show/hide event card's info: heading, description, image, divider
       specialCard.classList.remove("hide-event");
       socialCard.classList.add("hide-event");
       familyCard.classList.add("hide-event");
     }
 
     if (e.target.classList.contains("social")) {
-      // show/hide active state of the event buttons
       specialTab.classList.remove("active");
       socialTab.classList.add("active");
       familyTab.classList.remove("active");
-      // show/hide event card's info: heading, description, image, divider
       specialCard.classList.add("hide-event");
       socialCard.classList.remove("hide-event");
       familyCard.classList.add("hide-event");

@@ -1,16 +1,12 @@
 import React from "react";
 import enjoymobile from "../../assets/homepage/enjoyable-place-mobile.jpg";
-import enjoymobilex2 from "../../assets/homepage/enjoyable-place-mobile@2x.jpg";
 import enjoytablet from "../../assets/homepage/enjoyable-place-tablet.jpg";
 import enjoytabletx2 from "../../assets/homepage/enjoyable-place-tablet@2x.jpg";
 import enjoydesktop from "../../assets/homepage/enjoyable-place-desktop.jpg";
-import enjoydesktopx2 from "../../assets/homepage/enjoyable-place-desktop@2x.jpg";
 import localfoodmobile from "../../assets/homepage/locally-sourced-mobile.jpg";
-import localfoodmobilex2 from "../../assets/homepage/locally-sourced-mobile@2x.jpg";
 import localfoodtablet from "../../assets/homepage/locally-sourced-tablet.jpg";
 import localfoodtabletx2 from "../../assets/homepage/locally-sourced-tablet@2x.jpg";
 import localfooddesktop from "../../assets/homepage/locally-sourced-desktop.jpg";
-import localfooddesktopx2 from "../../assets/homepage/locally-sourced-desktop@2x.jpg";
 import divider from "../../assets/patterns/pattern-divide.svg";
 import lines from "../../assets/patterns/pattern-lines.svg";
 
