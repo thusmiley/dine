@@ -17,8 +17,8 @@ Dine restaurant website
 
 ### Links
 
-- Git URL: https://github.com/thusmiley/scoot.git
-- Live Site URL: https://thusmiley.github.io/scoot/
+- Git URL: https://github.com/thusmiley/dine.git
+- Live Site URL: https://dine-sooty.vercel.app/
 
 ### Built with
 
