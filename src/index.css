@@ -322,12 +322,14 @@ select {
   line-height: 28px;
   outline: none;
   @apply caret-beaver;
+  border-radius: 0;
+  -webkit-border-radius: 0;
 }
 
 select {
   -webkit-appearance: none;
   appearance: none;
-  background: url('/src/assets/icons/icon-arrow.svg') no-repeat right 16px top 6px;
+  background: url("/src/assets/icons/icon-arrow.svg") no-repeat right 16px top 6px;
 }
 
 input::placeholder {
