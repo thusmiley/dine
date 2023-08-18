@@ -1,42 +1,41 @@
 import React from "react";
 import arrow from "../../assets/icons/icon-arrow.svg";
 import lines from "../../assets/patterns/pattern-lines.svg";
+import { useState } from "react";
 
 const BookingForm = () => {
   function validateForm() {
-    const name = document.getElementById("name");
-    const email = document.getElementById("email");
-    const month = document.getElementById("month");
-    const day = document.getElementById("day");
-    const year = document.getElementById("year");
-    const hour = document.getElementById("hour");
-    const minute = document.getElementById("minute");
-    const border = document.getElementsByTagName("input");
-
+    // const name = document.getElementById("name");
+    // const email = document.getElementById("email");
+    // const month = document.getElementById("month");
+    // const day = document.getElementById("day");
+    // const year = document.getElementById("year");
+    // const hour = document.getElementById("hour");
+    // const minute = document.getElementById("minute");
+    // const border = document.getElementsByTagName("input");
     // if (!name || !email || !month || !day || !year || !hour || !minute || isNaN(month) || isNaN(day) || isNaN(year) || isNaN(hour) || isNaN(minute)) {
     //   alert("This field is required");
     // }
-
     //   if (email !== "/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/") {
     //     alert("This field is required");
     //   }
   }
-  function numOfPeople() {
-    const add = document.getElementById("add");
-    const minus = document.getElementById("minus");
-    let people = document.getElementById("people");
-    let num = 4;
+  const [num, setNum] = useState(4);
 
-    add.addEventListener("click", () => {
-      num++;
-      people.innerHTML = num;
-    });
-    minus.addEventListener("click", () => {
-      num--;
-      people.innerHTML = num;
-    });
-  }
-  numOfPeople();
+  const countUp = () => {
+    if (num >= 10) {
+      return setNum(10);
+    } else {
+      setNum(num + 1);
+    }
+  };
+  const countDown = () => {
+    if (num <= 1) {
+      return setNum(1);
+    } else {
+      setNum(num - 1);
+    }
+  };
 
   return (
     <section className="h-[534px] md:h-[435px] xl:h-[320px] bg-booking-form">
@@ -78,13 +77,13 @@ const BookingForm = () => {
 
           {/* people */}
           <div className="mt-[34px] flexBetween w-full font-bold px-4 border-b-[1px] border-b-[#979797] pb-[14px]">
-            <button className="text-beaver cursor-pointer" id="minus">
+            <button className="text-beaver cursor-pointer" onClick={countDown}>
               -
             </button>
             <p>
-              <span id="people">4</span> people
+              <span id="people">{num}</span> people
             </p>
-            <button className="text-beaver cursor-pointer" id="add">
+            <button className="text-beaver cursor-pointer" onClick={countUp}>
               +
             </button>
           </div>
