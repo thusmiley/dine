@@ -23,7 +23,7 @@ const Features = () => {
           <source media="(max-width: 1024px)" srcset={enjoytablet} />
           <source media="(max-width: 1200px)" srcset={enjoytabletx2} />
           <source media="(min-width: 1201px)" srcset={enjoydesktop} />
-          <img src={enjoymobile} />
+          <img src={enjoymobile} className="boxshadow xl:mb-[-180px]" />
         </picture>
 
         <div className="xl:ml-[125px]">
@@ -44,7 +44,7 @@ const Features = () => {
           <source media="(max-width: 1024px)" srcset={localfoodtablet} />
           <source media="(max-width: 1200px)" srcset={localfoodtabletx2} />
           <source media="(min-width: 1201px)" srcset={localfooddesktop} />
-          <img src={localfoodmobile} alt="locally sourced food" className="imgBoxshadow xl:mb-[-180px]" />
+          <img src={localfoodmobile} alt="locally sourced food" className="boxshadow xl:mb-[-180px]" />
         </picture>
         <div className="relative xl:mr-[125px] ">
           <img src={lines} alt="pattern" className="hidden md:block absolute top-[-120px] right-[-120px] xl:top-[70%] xl:right-[-170%]" />

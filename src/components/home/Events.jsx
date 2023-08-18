@@ -55,7 +55,7 @@ const Events = () => {
   };
 
   return (
-    <section className="events-bg">
+    <section className="events-bg transition-all duration-500">
       <div className="w-container px-cx mx-auto flexCenter flex-col text-center pt-[520px] mb-[124px] relative md:pt-[550px] xl:flex-col-reverse xl:text-left xl:pt-[160px] xl:mb-[160px]">
         <div className="md:flex md:justify-between md:items-center xl:flex-col xl:justify-start xl:absolute xl:left-[58.8%] xl:top-[75%]">
           <div className="relative h-[28px] w-[326px] mx-auto md:h-[36px] md:w-[223px] md:mx-0">
@@ -83,7 +83,7 @@ const Events = () => {
               <source media="(max-width: 680px)" srcset={familymobile} />
               <source media="(max-width: 1200px)" srcset={familytablet} />
               <source media="(min-width: 1201px)" srcset={familydesktop} />
-              <img src={familymobile} alt="family gathering" className="imgBoxshadow mx-auto xl:mx-0" />
+              <img src={familymobile} alt="family gathering" className="boxshadow mx-auto xl:mx-0" />
             </picture>
             <div>
               <h2 className="heading2 mt-[27px]">Family Gathering</h2>

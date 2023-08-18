@@ -126,6 +126,7 @@ a {
 
 .cta-dark {
   border: 1px solid white;
+  @apply bg-coldGray text-white;
 }
 
 .cta-light {
@@ -133,9 +134,20 @@ a {
   color: #111111;
 }
 
+.form-cta {
+  padding: 19px 36px;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 16px;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
 .cta-dark:hover {
   background: #fff;
-  @apply text-coldGray;
+  @apply text-coldGray border-coldGray;
 }
 
 .cta-light:hover {
@@ -143,7 +155,7 @@ a {
   color: white;
 }
 
-.imgBoxshadow {
+.boxshadow {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
@@ -252,8 +264,7 @@ button.active {
     background-size: contain contain;
   }
   @screen xl {
-    background: url("./assets/patterns/pattern-curve-top-right.svg") no-repeat top 25% left 0,
-      url("./assets/patterns/pattern-curve-top-left.svg") no-repeat bottom 0 right 0;
+    background: url("./assets/patterns/pattern-curve-top-right.svg") no-repeat top 25% left 0, url("./assets/patterns/pattern-curve-top-left.svg") no-repeat bottom 0 right 0;
     background-size: contain contain;
   }
 }
@@ -271,4 +282,75 @@ button.active {
 
 .hide-event {
   display: none;
+}
+
+/* booking page  */
+.bg-booking-hero {
+  background: url("/src/assets/booking/hero-bg-mobile.jpg") no-repeat center top;
+  background-size: cover;
+  @screen sm {
+    background: url("/src/assets/booking/hero-bg-mobile@2x.jpg") no-repeat center top;
+    background-size: cover;
+  }
+  @screen md {
+    background: url("/src/assets/booking/hero-bg-tablet.jpg") no-repeat center top;
+    background-size: cover;
+  }
+  @screen lg {
+    background: url("/src/assets/booking/hero-bg-tablet@2x.jpg") no-repeat center top;
+    background-size: cover;
+  }
+  @screen xl {
+    background: url("/src/assets/booking/hero-bg-desktop.jpg") no-repeat center top;
+    background-size: cover;
+  }
+  @screen 2xl {
+    background: url("/src/assets/booking/hero-bg-desktop@2x.jpg") no-repeat center top;
+    background-size: cover;
+  }
+}
+
+/* booking form  */
+input,
+select {
+  width: 100%;
+  border-bottom: 1px solid #979797;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 28px;
+  outline: none;
+  @apply caret-beaver;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  background: url('/src/assets/icons/icon-arrow.svg') no-repeat right 16px top 6px;
+}
+
+/* select::after {
+  content: url("/src/assets/icons/icon-arrow.svg");
+  position: absolute;
+  display: inline-block;
+  right: 16px;
+  bottom: 14px;
+} */
+
+input::placeholder {
+  @apply text-coldGray opacity-50;
+}
+
+:-webkit-autofill,
+:-webkit-autofill:hover,
+:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 16px 1000px #fff inset;
+}
+
+.bg-booking-form {
+  @screen xl {
+    background: url("/src/assets/patterns/pattern-curve-bottom-right.svg") no-repeat left -50% top 0;
+    background-size: contain;
+  }
 }
