@@ -121,7 +121,7 @@ a {
   letter-spacing: 2.5px;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .cta-dark {
@@ -336,9 +336,9 @@ input::placeholder {
   @apply text-coldGray opacity-50;
 }
 
-:-webkit-autofill,
-:-webkit-autofill:hover,
-:-webkit-autofill:focus {
+input:-webkit-autofill:hover,
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 16px 1000px #fff inset;
 }
 

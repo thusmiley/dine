@@ -77,15 +77,15 @@ const BookingForm = () => {
 
           {/* people */}
           <div className="mt-[34px] flexBetween w-full font-bold px-4 border-b-[1px] border-b-[#979797] pb-[14px]">
-            <button className="text-beaver cursor-pointer" onClick={countDown}>
+            <span className="text-beaver cursor-pointer" onClick={countDown}>
               -
-            </button>
+            </span>
             <p>
               <span id="people">{num}</span> people
             </p>
-            <button className="text-beaver cursor-pointer" onClick={countUp}>
+            <span className="text-beaver cursor-pointer" onClick={countUp}>
               +
-            </button>
+            </span>
           </div>
 
           {/* submit */}
