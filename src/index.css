@@ -145,12 +145,16 @@ a {
   transition: 0.3s ease-in-out;
 }
 
-.cta-dark:hover {
+.cta-dark:hover,
+.cta-dark:active,
+.cta-dark:focus {
   background: #fff;
   @apply text-coldGray border-coldGray;
 }
 
-.cta-light:hover {
+.cta-light:hover,
+.cta-light:active,
+.cta-light:focus {
   background: #111;
   color: white;
 }
