@@ -55,7 +55,10 @@ const Events = () => {
       <div className="w-container px-cx mx-auto flexCenter flex-col text-center pt-[520px] mb-[124px] relative md:pt-[550px] xl:flex-col-reverse xl:text-left xl:pt-[160px] xl:mb-[160px]">
         <div className="md:flex md:justify-between md:items-center xl:flex-col xl:justify-start xl:absolute xl:left-[58.8%] xl:top-[75%]">
           <div className="relative h-[28px] w-[326px] mx-auto md:h-[36px] md:w-[223px] md:mx-0">
-            <button className="heading4 tab active family" onClick={handleClick}>
+            <button
+              className="heading4 tab active family"
+              onClick={handleClick}
+            >
               FAMILY GATHERING
             </button>
           </div>
@@ -74,17 +77,27 @@ const Events = () => {
         {/* family gathering */}
         <div id="family">
           <div className="xl:flex">
-            <img src={lines} alt="pattern" className="hidden md:block md:absolute md:top-[85px] md:left-[2%] md:z-10 xl:top-[130px] xl:left-[-30px]" />
+            <img
+              src={lines}
+              alt="pattern"
+              className="hidden md:block md:absolute md:top-[85px] md:left-[2%] md:z-10 xl:top-[130px] xl:left-[-30px]"
+            />
             <picture className="img-active absolute top-20 md:top-[120px] left-0 right-0 xl:relative xl:top-0 xl:mr-[125px]">
               <source media="(max-width: 680px)" srcset={familymobile} />
               <source media="(max-width: 1200px)" srcset={familytablet} />
               <source media="(min-width: 1201px)" srcset={familydesktop} />
-              <img src={familymobile} alt="family gathering" className="boxshadow mx-auto xl:mx-0" />
+              <img
+                src={familymobile}
+                alt="family gathering"
+                className="boxshadow mx-auto xl:mx-0"
+              />
             </picture>
             <div>
               <h2 className="heading2 mt-[27px]">Family Gathering</h2>
               <p className="paragraph description mt-[13px] mb-[40px] md:mt-[19px] md:mb-[60px]">
-                We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all.
+                We love catering for entire families. So please bring everyone
+                along for a special meal with your loved ones. We’ll provide a
+                memorable experience for all.
               </p>
               <a href="/booking" className="cta cta-light">
                 BOOK A TABLE
@@ -96,18 +109,27 @@ const Events = () => {
         {/* special events */}
         <div id="special" className="hide-event">
           <div className="xl:flex">
-            <img src={lines} alt="pattern" className="hidden md:block md:absolute md:top-[85px] md:left-[2%] md:z-10 xl:top-[130px] xl:left-[-30px]" />
+            <img
+              src={lines}
+              alt="pattern"
+              className="hidden md:block md:absolute md:top-[85px] md:left-[2%] md:z-10 xl:top-[130px] xl:left-[-30px]"
+            />
             <picture className="img-active absolute top-20 md:top-[120px] left-0 right-0 xl:relative xl:top-0 xl:mr-[125px]">
               <source media="(max-width: 680px)" srcset={specialmobile} />
               <source media="(max-width: 1200px)" srcset={specialtablet} />
               <source media="(min-width: 1201px)" srcset={specialdesktop} />
-              <img src={specialmobile} alt="special events" className="imgBoxshadow mx-auto xl:mx-0" />
+              <img
+                src={specialmobile}
+                alt="special events"
+                className="boxshadow mx-auto xl:mx-0"
+              />
             </picture>
             <div>
               <h2 className="heading2 mt-[27px]">Special Events</h2>
               <p className="paragraph description mt-[13px] mb-[40px] md:mt-[19px] md:mb-[60px]">
-                Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. We’ll be sure to mark your special date with an unforgettable
-                meal.
+                Whether it’s a romantic dinner or special date you’re
+                celebrating with others we’ll look after you. We’ll be sure to
+                mark your special date with an unforgettable meal.
               </p>
               <a href="/booking" className="cta  cta-light">
                 BOOK A TABLE
@@ -119,18 +141,27 @@ const Events = () => {
         {/* social events */}
         <div id="social" className="hide-event">
           <div className="xl:flex">
-            <img src={lines} alt="pattern" className="hidden md:block md:absolute md:top-[85px] md:left-[2%] md:z-10 xl:top-[130px] xl:left-[-30px]" />
+            <img
+              src={lines}
+              alt="pattern"
+              className="hidden md:block md:absolute md:top-[85px] md:left-[2%] md:z-10 xl:top-[130px] xl:left-[-30px]"
+            />
             <picture className="img-active absolute top-20 md:top-[120px] left-0 right-0 xl:relative xl:top-0 xl:mr-[125px]">
               <source media="(max-width: 680px)" srcset={socialmobile} />
               <source media="(max-width: 1200px)" srcset={socialtablet} />
               <source media="(min-width: 1201px)" srcset={socialdesktop} />
-              <img src={socialmobile} alt="social events" className="imgBoxshadow mx-auto xl:mx-0" />
+              <img
+                src={socialmobile}
+                alt="social events"
+                className="boxshadow mx-auto xl:mx-0"
+              />
             </picture>
             <div>
               <h2 className="heading2 mt-[27px]">Social Events</h2>
               <p className="paragraph description mt-[13px] mb-[40px]">
-                Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. We’ll work with you to make your event a hit with
-                everyone.
+                Are you looking to have a larger social event? No problem! We’re
+                more than happy to cater for big parties. We’ll work with you to
+                make your event a hit with everyone.
               </p>
               <a href="/booking" className="cta  cta-light">
                 BOOK A TABLE
